@@ -1,26 +1,28 @@
 const {inventory} = require('./inventory.js'); // Details of the inventory are located here.
 const problem4 = require('../problem4.js');
+const data = problem4(inventory)
+const problem5 = require('../problem5.js');
 
 console.log("Test Case- 1")
-result =problem4(inventory) 
+let result =problem5(data) 
 console.log(result)
 
 console.log("Test Case-2")
-result =problem4(undefined) 
+result =problem5(undefined) 
 console.log(result)
 
 console.log("Test Case-3")
-result =problem4(true) 
+result =problem5(true) 
 console.log(result)
 
 console.log("Test Case-4")
-result =problem4(null)
+result =problem5(null)
 console.log(result)
 
 console.log("Test Case-5")
-result =problem4("x")
+result =problem5("x")
 console.log(result)
 
 console.log("Test Case-6")
-result =problem4(0)
+result =problem5(0)
 console.log(result)

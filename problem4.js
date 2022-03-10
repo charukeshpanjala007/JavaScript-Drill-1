@@ -11,5 +11,5 @@ module.exports = function (inventory) {
     if (output.length=== 0) {
         output = "Details not found"
     }
-    console.log(output)
+    return (output)
 }
