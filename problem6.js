@@ -1,4 +1,4 @@
-module.exports = function (inventory) {
+const findBMWAudi = function (inventory) {
     let output = []
     if (inventory !== null && inventory !== undefined && inventory.length !== 0) {
         for (let index = 0; index < inventory.length; index++) {
@@ -17,3 +17,4 @@ module.exports = function (inventory) {
     }
     return (output)
 }
+module.exports = findBMWAudi    

@@ -1,18 +1,18 @@
-module.exports = function (data) {
-    let output= 0
-    if (data === "Details not found"){
-        output = "No Cars found"
-    }else if (data!=undefined && data!=null && data.length !== 0) {
-        for (let index = 0; index < data.length; index++) {
-            carYear = data[index]
-            if(carYear > 2000){
-                output += 1
+const findOlderThan200 = function(inventory){
+    let output = []
+    if(inventory!==null && inventory!==undefined && inventory.length!==0){
+        for(let index=0; index<inventory.length; index++){
+            const carDetails = inventory[index]
+            if(carDetails.car_year<2000){
+                output.push(carDetails)
             }
         }
     }
-    if (output===0){
-        output = "No Cars found"
+    if(output.length > 0 && output!==[]){
+        console.log(output, `Number of cars older than 2000: ${output.length}`)
+    }else{
+        console.log("Details not found")
     }
-    return output
 }
 
+module.exports = findOlderThan200

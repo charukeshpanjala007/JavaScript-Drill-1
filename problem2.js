@@ -1,4 +1,4 @@
-module.exports = function (inventory) {
+const findLastCarInfo =  function (inventory) {
     let output = ""
     if (inventory !== null && inventory !== undefined && inventory.length !== 0)  {
         const carDetails = inventory[inventory.length - 1]
@@ -12,3 +12,4 @@ module.exports = function (inventory) {
     console.log(output)
 }
 
+module.exports = findLastCarInfo

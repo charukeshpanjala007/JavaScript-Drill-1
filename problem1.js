@@ -1,4 +1,4 @@
-module.exports = function (inventory, value) {
+const findCarInfo = function (inventory, value) {
     let output = ""
     if(inventory!== null && inventory.length!== 0 && inventory!== undefined && value !== null && value != undefined){
         for (let index = 0; index < inventory.length; index++) {
@@ -15,3 +15,5 @@ module.exports = function (inventory, value) {
     }
     console.log(output)
 };
+
+module.exports = findCarInfo
